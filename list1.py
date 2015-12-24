@@ -1,8 +1,6 @@
 """Problem 1.01 : print last element"""
-def my_list(x,list_1):
-	print "hello"
-	x = list_1[-1]
-	return x
-my_list(y,['a','b','c','d'])
-
-print"hello"
+def my_list(list_1):
+	if list_1:
+		x = list_1[-1]
+		print x
+my_list([2])
