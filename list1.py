@@ -21,7 +21,7 @@ def my_list(list_1,element_position):
 	else:
 		print"Element not present"
 	print "No of element in list :",len(list_1)
-my_list([2,9,7,8],-0)
+my_list([2,9,7,8],2)
 
 """reverse list"""
 
