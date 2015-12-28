@@ -29,14 +29,14 @@ print ilist
 
 """output : [[4, 'a'], [1, 'b'], [2, 'c'], [2, 'a'], [1, 'd'], [4, 'e']]"""
 pack=['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
-ilist=[]
-nlist=[]
+merged_list=[]
+sub_list=[]
 for i,item in enumerate(pack):
 	if(i<len(pack)-1 and pack[i]==pack[i+1]):
-		nlist.append(item)
+		sub_list.append(item)
 	else:
-		nlist.append(item)
-		list_new = [len(nlist), nlist[0]]
-		ilist.append(list_new)
-		nlist=[]
-print ilist
+		sub_list.append(item)
+		list_new = [len(sub_list), sub_list[0]]
+		merged_list.append(list_new)
+		sub_list=[]
+print merged_list
