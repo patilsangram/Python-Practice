@@ -58,15 +58,20 @@ def dupli_list_method(simply_list,x):
 
 dupli_list_method(['a','b','c','c','d'],3)
 
-# pack = ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
+""" 1.13 Without appending each child in sublist"""
+pack = ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
+result_list = []
+sub_list = []
+count = 0
+for i, item in enumerate(pack):
+	if i<len(pack)-1 and pack[i] == pack[i+1]:
+		count +=1
+	else:
+		count+=1
+		sub_list = [item, count]
+		result_list.append(sub_list)
+		sub_list = []
+		count = 0
+print result_list
 
-# for i, item in enumerate(pack):
-# 	count = 0
-# 	if i<len(pack)-1 and pack[i] == pack[i+1]:
-# 		count += 1
-# 		pack.insert(i,count)
-# 	else:
-# 		count = 1
-# 		pack[i] = count
-# print pack
 
