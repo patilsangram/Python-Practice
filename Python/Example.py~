@@ -1,0 +1,15 @@
+class Example:
+	name = "Sangram"
+	age = 23
+		
+	
+	def sum(self,a,b):
+		if a<b:
+			print"%d is less than %d"%(a,b)
+		else:
+			print"%d is greater than %d"%(a,b)
+Example()
+obj = Example()
+obj.sum(56,89)
+obj.name
+obj.age
