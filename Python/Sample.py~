@@ -1,5 +1,0 @@
-class Sample:
-	def sum(self):
-		a,b = 5,7
-		print a+b
-		
