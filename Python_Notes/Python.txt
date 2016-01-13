@@ -1,0 +1,18 @@
+﻿when we execute a source code , Python compiles it into byte code.
+ Compilation is a translation step, and the byte code is low level platform-independent representation of source code. 
+Python byte code is not binary machine code .
+Python translate each statement of the source code into byte code instructions by decomposing them into indivisual steps.
+Byte code translation is performed to speed execution
+Byte code run more quickly than source code .It has .pyc extension
+it will be written if it can write to our machine.
+So, next time we run the same program. Python will load the .pyc file and skip the compilation step unless it been changed.
+
+Python virtual machine
+Once our program compiled into byte code, it is shipped off for execution to Python Virtual Machine (PVM) .
+PVM is not separate program , It need not  be installed by itself.
+PVM is just big loop that iterates through our byte code instruction, one by one, to carry out their operation.
+PVM is the runtime engine of python.
+It's the  component that truly runs our Script.
+
+Python performance 
+Unlike other compiled languages, Python code runs immediately after it is written. Byte code is a Python-specific representation.
